@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- <button onclick="panToggle(modes.pan)" class="hover">
+            <img src="./hold.png" alt="">
+        </button> -->
+    <div id = "penthings">
+        <button class="drawing hover" onclick="panToggle(modes.drawing)">
+            <img src="./anotherPen.png" alt="">
+        </button>
+
+        <!-- <div class="sizeSelect hover">
+            <select name="" id="penSize" value='2' onchange="changeOption(event)" >
+
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div> -->
+
+        <div class="eraserContainer">
+            <button class="penSize hover" onclick="penSize(1)">
+                <img src="penSIze.png" id="eraser1" alt="">
+            </button>
+        
+            <button class="penSize hover" onclick="penSize(2)">
+                <img src="penSIze.png" id="eraser2" alt="">
+            </button>
+        
+            <button class="penSize hover" onclick="penSize(3)">
+                <img src="penSIze.png" id="eraser3" alt="">
+            </button>
+        
+            <button class="penSize hover" onclick="penSize(4)">
+                <img src="penSIze.png" id="eraser4" alt="">
+            </button>
+        
+            <button class="penSize hover" onclick="penSize(5)">
+                <img src="penSIze.png" id="eraser5" alt="">
+            </button>
+        </div>
+    </div>
+
+
+        <!-- <button onclick="panToggle(modes.default)" class="hover">
+            <img src="/cursor.png" alt="">
+        </button> -->
+    <div id="eraserthings">
+        <button class="rubber hover" id="eraser" onclick="panToggle(modes.eraser)">
+            <img src="/eraser.png" alt="">
+        </button>
+
+        <div class="eraserContainer">
+            <button class="rubber hover" onclick="panToggle(modes.a1)">
+                <img src="new-moon.png" id="eraser1" alt="">
+            </button>
+
+            <button class="rubber hover" onclick="panToggle(modes.a2)">
+                <img src="new-moon.png" id="eraser2" alt="">
+            </button>
+
+            <button class="rubber hover" onclick="panToggle(modes.a3)">
+                <img src="new-moon.png" id="eraser3" alt="">
+            </button>
+
+            <button class="rubber hover" onclick="panToggle(modes.a4)">
+                <img src="new-moon.png" id="eraser4" alt="">
+            </button>
+
+            <button class="rubber hover" onclick="panToggle(modes.a5)">
+                <img src="new-moon.png" id="eraser5" alt="">
+            </button>
+        </div>
+    </div>
+
+        <div class = "" id="redoUndo" >
+            <button>
+                <img src="undo.png" alt="" onclick="doUndo()">
+            </button>
+            <button>
+                <img src="redo.png" alt="" onclick="doRedo()">
+            </button>
+        </div>
+
+
+        <div class="hover">
+            <input type="color" id="colorPicker" value="#FF3399">
+        </div>
+
+        <!-- <div class="hover">
+            <button id = "saveButton" onclick="saveState()">Save</button>
+        </div>
+
+        <div class="hover">
+            <button id= "loadButton" onclick="loadCanvasData()">Load</button>
+        </div> -->
+
+        <div class="hover">
+            <button id="loadButton" onclick="clearCanvas()">Clear</button>
+        </div>
+
+        <div class="hover roomName" id="createBox">
+            <input type="text" id="createRoomName" placeholder="Room Name">
+            <button id="createButton">Join</button>
+        </div>
+
+        <div class = "hover roomName" id = "joinBox">
+            <input type="text" id = "roomName" placeholder="Room Name">
+            <button id = "joinRoom">Join</button>
+        </div>
+
+        <!-- 
+        <div class="hover">
+            <button id="addButton" onclick="add()">Add</button>
+        </div> -->
+
+        <!-- <div class="hover">
+            <button id="loadButton" onclick="saveBgImage()">Img</button>
+        </div>
+
+        <div class="hover">
+            <button id="loadButton" onclick="saveBgRImage()">Rmg</button>
+        </div> -->
+
+        <!-- <div class="hover">
+            <input type="color" id="bgColorPicker" value="#FFFFFF">
+        </div> -->
+
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.4.4/fabric.min.js"></script>
+<script src="socket.io.js"></script>
+<script src="app.js"></script>
+
+</html>

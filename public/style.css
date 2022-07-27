@@ -1,0 +1,263 @@
+body {
+    background-color: black;
+}
+
+* {
+    overflow: hidden
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: rgb(16, 15, 15);
+}
+
+@media screen {
+    body>div#header {
+        position: fixed;
+    }
+
+    body>div#footer {
+        position: fixed;
+    }
+}
+
+/* $blue: #3498db
+$green: #1abc9c
+$red: #c0392b
+$stone: #bdc3c7
+$slate: darken($stone, 50)
+$yellow: #f1c40f */
+
+html {
+    overflow-y: scroll;
+}
+
+
+/* html */
+/* background: #e3e3e3 */
+
+/* canvas */
+/* border-radius: 5px */
+
+
+
+.pencil {
+    background-color: rgb(32, 31, 31);
+    color: white;
+}
+
+div img {
+    /* width : 100px; */
+    /* background-color: rgb(32, 31, 31); */
+    background-color: transparent;
+    /* background-color: rgb(250, 246, 246); */
+    height: 40px;
+}
+
+/* header div img::c */
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    /* border : 1px solid red; */
+    background-color: rgb(50, 49, 49);
+    display: flex;
+    height: 63px;
+    align-items: center;
+    z-index: 2;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.header>div {
+    margin: 1.5vh;
+    padding: 0.5vh;
+    border-radius: 4px;
+    /* border : 1px solid red; */
+}
+
+.hover:hover {
+    background-color: black;
+}
+
+div input {
+    height: 40px;
+    width: 40px;
+}
+
+#penthings
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#eraserthings
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    border-radius: 10px;
+}
+
+.header button {
+    height: 50px;
+    width: 40px;
+    /* margin:1vh; */
+
+    background-color: rgb(50, 49, 49);
+    border: none;
+    padding: 0;
+    /* border : 1px solid white; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header>button {
+    margin: 10px;
+}
+
+.header img {
+    background-color: transparent;
+    /* border : 1px solid red; */
+    /* background-color: rgb(250, 246, 246); */
+    height: 40px;
+}
+
+.slidecontainer input {
+    /* border: 1px solid white; */
+    width: 100px;
+    color: red;
+}
+
+.eraserContainer {
+    margin-left : 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border : 1px solid white; */
+    padding: 0;
+    /* margin-right : -5px; */
+}
+
+#eraser1 {
+    height: 10px;
+}
+
+#eraser2 {
+    height: 15px;
+}
+
+#eraser3 {
+    height: 20px;
+}
+
+#eraser4 {
+    height: 25px;
+}
+
+#eraser5 {
+    height: 30px;
+}
+
+#penSize {
+    color: white;
+    background-color: black;
+    height: 5vh;
+    /* padding: 0.5vh; */
+    font-size: large;
+}
+
+
+#redoUndo {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border : 1px solid red; */
+}
+
+#redoUndo button:hover {
+    background-color:black;
+}
+
+/* #canvas
+{
+    margin-top : 0;
+} */
+
+
+#saveButton {
+    /* background-color: rgb(77, 66, 66); */
+    font-size: large;
+    /* width: 150px, */
+    /* height: 35px, */
+}
+
+#loadButton
+{
+    font-size : large;
+}
+
+#addButton
+{
+    font-size : large;
+}
+
+
+#joinBox
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    /* border : 1px solid white; */
+}
+
+#joinBox:hover
+{
+    background-color: transparent;
+}
+
+#joinBox input 
+{
+    margin-left : 5px;
+    margin-right : 10px;
+    width : 150px;
+    text-align: center;
+    border : 5px;
+    background-color: black;
+    /* border : none; */
+    border-radius : 8px;
+    color : white;
+    font-size: large;
+}
+
+
+#joinBox input:focus
+{
+    outline: none;
+}
+
+#joinBox button 
+{
+    border : 1px solid rgb(71, 69, 69);
+    height : 40px;
+    margin-right : 5px;
+    font-size : large;
+    width : 60px;
+    border-radius: 2px;
+    border-radius : 10px;
+}
+
+#joinBox button:hover
+{
+    background-color: rgb(42, 31, 31);
+}
